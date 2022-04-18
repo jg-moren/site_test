@@ -1,0 +1,68 @@
+
+:root{
+    --height:50px;
+    --percent:0%;
+    --percent_day:0%;
+}
+
+body{
+
+    background: black;
+
+    padding: 20vh 0 ;
+    align-items: center;
+}
+
+.year{
+    color: white;
+    font-family: 'Courier New';
+    font-size: 100px;
+    text-align: center;
+
+}
+
+.bar{
+    height: var(--height);
+    
+    margin: auto;
+    width: calc(100% - 50px) ;
+    background: black;
+    outline: white solid 5px;
+}
+.progress{
+    height: var(--height);
+    width: var(--percent);
+    background: #00FF00
+}
+
+.percent{
+    margin: auto;
+    width: 350px;
+}
+label{
+    color: white;
+    font-family: 'Courier New';
+}
+.percent_int{
+    font-size: 100px;
+}
+.percent_float{
+    font-size: 50px;
+}
+
+
+
+.progress_day{
+    height: 20px;
+    width: var(--percent_day);
+    background: #00FF00
+}
+
+
+.bar_day{
+    height: 20px;
+    margin: auto;
+    width: calc(75% - 50px) ;
+    background: black;
+    outline: white solid 5px;
+}

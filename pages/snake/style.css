@@ -1,0 +1,39 @@
+
+:root{
+    --size: 20px;
+    --grid-size: 10
+}
+
+body{
+    background-color: #000;
+}
+
+#grid{
+    width: calc((var(--grid-size)*var(--size)));
+    margin: 0px calc(50vw - (var(--size)*var(--grid-size))/2);
+    grid:  auto-flow  var(--size) / repeat(var(--grid-size), var(--size));
+    display: grid;
+    background: #000;
+    position: absolute;
+}
+
+.bloco{
+    position: relative;
+    width: var(--size);
+    height: var(--size);
+    text-align: center;
+    font-size: 50px;
+    font-family: cursive;
+    outline: 1px solid #FFFFFF;
+}
+
+#msg{
+    color: #000;
+    margin: 0px calc(50vw - 125px);
+    width: 250px;
+    font-size: 100px;
+    font-family:fantasy;
+    text-align: center;
+    background-color: #FFF;
+    position: absolute;
+}

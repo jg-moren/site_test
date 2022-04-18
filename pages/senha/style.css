@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+div{
+    margin-bottom: 50vmin;
+    color: white;
+    align-items: center;
+    text-align: center;
+
+}
+p{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+input{
+    border: 3px solid white;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 5vmin;
+    background-color: transparent;
+}

@@ -1,0 +1,84 @@
+body{
+	background: #000;
+}
+img{
+	height: 100%;
+	width: 100%;
+}
+.cene{
+	height: 100px;
+	width: 100px;
+	margin: 200px auto;
+	perspective: 30em;
+	transform-style: preserve-3d;
+	position: relative;	
+}
+.camera{
+	transform-style: preserve-3d;
+	transform:translate3d(0px,0px,0px) rotateX(-30deg);
+}
+
+
+.cube{
+	height: 100px;
+	width: 100px;
+	animation: 10s linear infinite cube;
+	position: absolute;
+	transform-style: preserve-3d;
+}
+
+@keyframes cube{
+	from{
+		transform:
+			rotateY(0deg);
+
+	}
+	to{
+		transform:
+			rotateY(360deg);
+	}
+}
+
+.cube-left, .cube-right, .cube-top, .cube-bottom, .cube-front, .cube-back{
+	--border:1px;
+	--size:100px;
+	
+	height: calc(var(--size) - 2 * var(--border));
+	width: calc(var(--size) - 2 * var(--border));	
+	position: absolute;
+	opacity: 100%;
+	border: var(--border) solid #FFF;
+
+}
+
+
+
+.cube-left{
+	transform: 
+		translate3d(-50px,0px,0px) 
+		rotateY(90deg);
+}
+.cube-right{
+	transform: 
+		translate3d(50px,0px,0px) 
+		rotateY(90deg);
+}
+.cube-top{
+	transform: 
+		translate3d(0px,50px,0px) 
+		rotateX(90deg);
+}
+.cube-bottom{
+	transform: 
+		translate3d(0px,-50px,0px) 
+		rotateX(90deg);
+}
+.cube-front{
+	transform: 
+		translate3d(0px,0px,50px) 
+		rotateZ(90deg);
+}.cube-back{
+	transform: 
+		translate3d(0px,0px,-50px) 
+		rotateZ(90deg);
+}

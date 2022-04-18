@@ -1,0 +1,14 @@
+canvas{
+    background: #5555FF;
+    outline: 1px solid #000000;
+}
+div{
+    align-items: center;
+    padding: auto;
+    margin-left: auto;
+
+}
+body{
+    align-items: center;
+    align-self: center;
+}

@@ -1,0 +1,41 @@
+.calc{
+
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    background: red;
+    
+    border-radius: 10px;
+}
+body{
+    background: black;
+}
+
+.time{
+    margin: auto;
+    transform: translate(0px,35px);
+    color: black;
+    font-family: fantasy;
+    width: 450px;
+}
+
+.display{
+    background: yellow;
+    font-family: fantasy;
+    color: black;
+    font-size: 50px;
+    text-align: right;
+    
+    border-radius: 10px;
+
+}
+
+#tecla{
+    text-align: center;
+    background: blue;
+    border-radius: 10px;
+    font-family: fantasy;
+    color: white;
+    font-size: 50px;
+}

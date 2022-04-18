@@ -1,0 +1,25 @@
+:root{
+    --height_px:500px;
+    --width_px:500px;
+}
+
+body{
+    background: gray;
+    margin: 0;
+}
+
+.fireDOOM{
+    background: black;
+    
+	height: 100vh;
+	width: 100vw;
+}
+
+table{
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: white;
+    font-size: 0px;
+}
